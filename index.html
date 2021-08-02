@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!--Google fonts links-->
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+    <!--set favicon-->
+    <link rel=" icon" href="img/fav/favicon.ico" />
+    <title>LogIn Form</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 5px;
+        }
+
+        .box {
+            border: 3px solid rgb(226, 223, 223);
+            border-radius: 2px;
+            align-items: center;
+            padding: 12px;
+            width: 100%;
+        }
+
+        img {
+
+            display: block;
+            border-radius: 50%;
+            width: 15rem;
+            margin: 30px auto;
+
+        }
+
+        label {
+            font-family: 'Rubik', sans-serif;
+            font-size: x-large;
+            font-weight: bold;
+        }
+
+        input {
+            padding: 12px;
+            width: 100%;
+            margin: 10px;
+            margin-left: 0px;
+        }
+
+        input[type="submit"] {
+            background-color: #04AA6D;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bolder;
+
+        }
+
+        input[type="submit"]:hover {
+            opacity: 0.8;
+        }
+
+        input[type="checkbox"] {
+            border: 2px solid red;
+            width: 7%;
+            margin: 0px;
+            font-size: small;
+        }
+
+        #rem {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+        }
+
+        #footer {
+            display: inline-block;
+            width: 100%;
+            padding: 19px;
+            background-color: rgb(226, 223, 223);
+        }
+
+        #footer button {
+            border: none;
+            background-color: #f44336;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 12px;
+            border-radius: 2px;
+        }
+
+        #footer button:hover {
+            opacity: 0.8;
+        }
+
+        #footer p {
+            float: right;
+
+        }
+
+        span {
+            color: red;
+        }
+
+        .container h2 {
+            text-align: center;
+            margin: 0px;
+        }
+
+        @media (max-width:400px) {
+            label {
+                font-size: large;
+            }
+
+            input {
+                padding: 6px;
+
+            }
+
+            img {
+                width: 9rem;
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="box">
+            <img src="img/user.png" alt="user">
+            <form action="#">
+                <div>
+                    <label for="username"><span>*</span> Username</label>
+                    <input type="text" name="username" id="username" placeholder="Enter Username" required>
+
+                    <label for="pass"><span>*</span> Password</label>
+                    <input type="password" name="password" id="pass" placeholder="Enter Password" required>
+
+                    <input type="submit" value="Login">
+                    <input type="checkbox" name="remember" id="ckbx" checked>
+                    <label id="rem" for="ckbx">Remember</label>
+                </div>
+
+            </form>
+        </div>
+        <div id="footer">
+            <button>Cancel</button>
+            <p>Forgot <a href="#" id="forgotpas">Password ?</a></p>
+        </div>
+    </div>
+
+</body>
+
+
+<div style="text-align: center; background-color: gray; color: white; padding: 10px;">Code by <a href="https://github.com/utkarshgupta04092003/" target="_blank" style="text-decoration: none; color:rgb(99, 1, 1)">Utkarsh</a></div>
+
+</html>
+<!--\
+    Web design reference - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_login_form
+-->
